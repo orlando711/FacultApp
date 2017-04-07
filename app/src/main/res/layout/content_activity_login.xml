@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="ar.com.facultapp.www.facultapp.pantalla_login"
+    tools:context="ar.com.facultapp.www.facultapp.LoginActivity"
     android:background="@drawable/fondo_degrade" >
 
     <Button
@@ -25,7 +25,6 @@
         android:layout_alignBottom="@+id/imageView6" />
 
     <ImageView
-        app:srcCompat="@drawable/Usuario"
         android:id="@+id/imageView4"
         android:layout_marginLeft="38dp"
         android:layout_marginStart="38dp"
@@ -37,49 +36,49 @@
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Correo Electrónico"
-        android:ems="10"
-        android:id="@+id/editText7"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
         android:layout_alignTop="@+id/imageView4"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
         android:layout_toLeftOf="@+id/button8"
         android:layout_toStartOf="@+id/button8"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp" />
+        android:ems="10"
+        android:hint="@string/correo_electr_nico"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <ImageView
         android:layout_width="25dp"
         android:layout_height="25dp"
-        app:srcCompat="@drawable/Contraseña"
         android:layout_marginTop="24dp"
         android:id="@+id/imageView6"
-        android:layout_below="@+id/editText7"
+        android:layout_below="@+id/editTextEmail"
         android:layout_alignLeft="@+id/imageView4"
         android:layout_alignStart="@+id/imageView4" />
 
     <EditText
+        android:id="@+id/editTextPassword"
+        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Contraseña"
-        android:ems="10"
-        android:id="@+id/editText8"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
         android:layout_alignBaseline="@+id/button8"
         android:layout_alignBottom="@+id/button8"
-        android:layout_alignLeft="@+id/editText7"
-        android:layout_alignStart="@+id/editText7" />
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:text="                Ok"
-        android:id="@+id/button10"
+        android:id="@+id/button_sign_in"
         android:background="@drawable/ok"
         android:layout_width="120dp"
         android:layout_height="30dp"
@@ -102,9 +101,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="13sp"
         android:textColor="@android:color/white"
-        android:layout_below="@+id/editText8"
-        android:layout_alignLeft="@+id/editText8"
-        android:layout_alignStart="@+id/editText8" />
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword" />
 
     <TextView
         android:text="ó ingresá con"
@@ -115,7 +114,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="16sp"
         android:textColor="@android:color/white"
-        android:layout_below="@+id/button10"
+        android:layout_below="@+id/button_sign_in"
         android:layout_centerHorizontal="true" />
 
     <ImageView
@@ -171,20 +170,18 @@
         android:layout_alignStart="@+id/imageButton" />
 
     <Button
-        android:text="Registrate ahora"
+        android:id="@+id/button_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button7"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:textColor="@android:color/white"
-        android:background="@android:color/transparent"
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/imageButton21"
         android:layout_alignRight="@+id/imageButton21"
-        android:layout_alignEnd="@+id/imageButton21" />
-
-</RelativeLayout>
+        android:background="@android:color/transparent"
+        android:text="Registrate ahora"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

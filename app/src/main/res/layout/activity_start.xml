@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="ar.com.facultapp.www.facultapp.pantalla_login">
+    tools:context="ar.com.facultapp.www.facultapp.StartActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -14,6 +14,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_pantalla_cero" />
+    <include layout="@layout/content_activity_start" />
 
 </android.support.design.widget.CoordinatorLayout>
