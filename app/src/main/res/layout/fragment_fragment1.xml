@@ -8,11 +8,19 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <ImageView
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/one"
+        android:id="@+id/imageView11"
+        android:layout_width="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:text="La sección transparente te muestra todo acerca de tus intereses y gustos personales."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="38dp"
         android:id="@+id/textView3"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18sp"
@@ -20,15 +28,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp" />
-
-    <ImageView
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/one"
-        android:id="@+id/imageView11"
-        android:layout_width="170dp"
-        android:layout_marginBottom="26dp"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
 </RelativeLayout>

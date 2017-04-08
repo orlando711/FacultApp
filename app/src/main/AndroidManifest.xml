@@ -22,6 +22,14 @@
         <activity
             android:name=".pantalla_login"
             android:label="@string/title_activity_pantalla_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Olvidaste_tu_clave"
+            android:label="@string/title_activity_olvidaste_tu_clave"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registrate_ahora"
+            android:label="@string/title_activity_registrate_ahora"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
