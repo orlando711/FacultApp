@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.quickstart.database.models.User;
+import ar.com.facultapp.www.facultapp.models.User;
 
 public class LoginActivity extends BaseActivity  implements View.OnClickListener{
 
