@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ar.com.facultapp.www.facultapp.Fragment2"
+    android:background="@color/colorAccent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/two"
+        android:id="@+id/imageView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="170dp" />
+
+    <TextView
+        android:text="This week mantiene organizada tu semana y te informa cada vez que hay un evento de tu interés!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+</RelativeLayout>
